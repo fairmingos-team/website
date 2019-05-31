@@ -1,0 +1,28 @@
+footer {
+    background: #333;
+}
+
+footer h5 {
+    color: white;
+}
+
+footer p {
+    color: #aaa;
+}
+
+footer a {
+    color: #888;
+}
+
+footer #contact p{
+    font-size: 12px;
+}
+
+footer #contact h6 {
+    color: #aaf;
+}
+
+.text-red {
+    color: #f33;
+    font-weight: bold;
+}
