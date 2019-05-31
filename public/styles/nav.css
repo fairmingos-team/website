@@ -1,0 +1,10 @@
+div #donate-btn {
+    border-radius: 5px;
+    border: none;
+    /* background: #0a0; */
+}
+
+div #donate-btn a {
+    color: #fff;
+    font-size: 20px;
+}
