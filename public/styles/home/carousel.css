@@ -1,5 +1,10 @@
-div #carousel {
+.carousel-inner {
+    height: 90vh;
 }
 body{
     background: #aaa;
+}
+
+.carousel-inner > .carousel-item > img {
+    height: 90vh;
 }
