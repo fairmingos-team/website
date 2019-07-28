@@ -1,10 +1,16 @@
-const express = require('express');
-let app = express();
+const express = require('express')
+let app = express()
 
 const port = 3000;
 
-app.use(express.static('public'));
+app.set('view engine', 'pug')
+
+app.use(express.static('public'))
+
+app.get('/', (req, res) => {
+  res.render('home')
+})
 
 app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
+  console.log(`Listening on port ${port}`)
 });
