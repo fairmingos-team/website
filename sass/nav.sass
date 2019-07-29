@@ -5,21 +5,33 @@ nav
   background: #1c6f59
   img
     display: inline-block
-    width: 80px
+    width: 150px
+    padding-left: 5px
   button
     display: inline-block
     background: none
-    border: none
     margin: 10px 30px
     padding: 0
-    cursor: pointer
     float: right
     font-size: 44px
   ul
     background: #489682
     margin: 0
+    padding: 15px
+    li 
+      margin: 15px
+      a
+        font-size: 28px
+        &.active
+          font-weight: 700
   // if non-mobile device
   @include lg
     display: flex
+    align-items: center
     button
       display: none
+    ul
+      background: none
+      li
+        display: inline-block
+        margin: 0 15px

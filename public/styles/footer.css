@@ -1,3 +1,52 @@
-
+footer {
+  background: #1c6f59;
+  padding: 15px;
+}
+footer hr {
+  border: 1px solid #486;
+}
+footer ul {
+  padding: 0 10px;
+}
+footer ul li {
+  margin: 10px 0;
+}
+footer ul li a {
+  font-size: 18px;
+}
+footer #footer-donate {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer #footer-donate button {
+  border: none;
+  background: #043;
+  font-size: 24px;
+  height: 60px;
+  width: 90%;
+  border-radius: 10px;
+  color: white;
+}
+@media only screen and (min-width: 720px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto 25% auto;
+    grid-gap: 30px;
+    padding: 5px 20px;
+  }
+  footer hr {
+    margin: 10px;
+    display: none;
+  }
+  footer #footer-donate {
+    padding: 30px;
+  }
+  footer #footer-donate button {
+    height: auto;
+    width: auto;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,39 @@
+@import breakpoints
+
+footer
+  background: #1c6f59
+  padding: 15px
+  hr
+    border: 1px solid #486
+  ul
+    padding: 0 10px
+    li
+      margin: 10px 0
+      a
+        font-size: 18px
+  #footer-donate
+    padding: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    button
+      border: none
+      background: #043
+      font-size: 24px
+      height: 60px
+      width: 90%
+      border-radius: 10px
+      color: white
+  @include lg
+    display: grid
+    grid-template-columns: auto 25% auto
+    grid-gap: 30px
+    padding: 5px 20px
+    hr
+      margin: 10px
+      display: none
+    #footer-donate
+      padding: 30px
+      button
+        height: auto
+        width: auto

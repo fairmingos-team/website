@@ -1,10 +1,21 @@
-nav
-  img.nav-logo(src="/images/fairmingos.png")
-  button.nav-collapse-btn &#8801;
-  ul.nav-collapsable
-    li
-      a(href="/") Home
-    li
-      a(href="/about") About
-    li
-      a(href="/contact") Contact
+mixin nav(title)
+  nav
+    a(href="/") 
+      img(src="/images/fairmingosheader1.png")
+    button#nav-collapse-btn &#8801;
+    ul#nav-collapsable
+      li
+        if(title == "Home")
+          a(href="/").active Home
+        else
+          a(href="/") Home
+      li
+        if(title == "About")
+          a(href="/").active About
+        else
+          a(href="/") About
+      li
+        if(title == "Contact")
+          a(href="/").active Contact
+        else
+          a(href="/") Contact

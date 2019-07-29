@@ -4,35 +4,124 @@ nav {
 }
 nav img {
   display: inline-block;
-  width: 80px;
+  width: 150px;
+  padding-left: 5px;
 }
 nav button {
   display: inline-block;
   background: none;
-  border: none;
   margin: 10px 30px;
   padding: 0;
-  cursor: pointer;
   float: right;
   font-size: 44px;
 }
 nav ul {
   background: #489682;
   margin: 0;
+  padding: 15px;
+}
+nav ul li {
+  margin: 15px;
+}
+nav ul li a {
+  font-size: 28px;
+}
+nav ul li a.active {
+  font-weight: 700;
 }
 @media only screen and (min-width: 720px) {
   nav {
     display: flex;
+    align-items: center;
   }
   nav button {
     display: none;
   }
+  nav ul {
+    background: none;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
+
+footer {
+  background: #1c6f59;
+  padding: 15px;
+}
+footer hr {
+  border: 1px solid #486;
+}
+footer ul {
+  padding: 0 10px;
+}
+footer ul li {
+  margin: 10px 0;
+}
+footer ul li a {
+  font-size: 18px;
+}
+footer #footer-donate {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer #footer-donate button {
+  border: none;
+  background: #043;
+  font-size: 24px;
+  height: 60px;
+  width: 90%;
+  border-radius: 10px;
+  color: white;
+}
+@media only screen and (min-width: 720px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto 25% auto;
+    grid-gap: 30px;
+    padding: 5px 20px;
+  }
+  footer hr {
+    margin: 10px;
+    display: none;
+  }
+  footer #footer-donate {
+    padding: 30px;
+  }
+  footer #footer-donate button {
+    height: auto;
+    width: auto;
+  }
+}
+
+main {
+  background: white;
+  margin: 0 4%;
+  min-height: 50vh;
 }
 
 body {
   margin: 0;
   padding: 0;
   background: #f5a0a0;
+  font-family: Helvetica;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

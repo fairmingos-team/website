@@ -4,28 +4,45 @@ nav {
 }
 nav img {
   display: inline-block;
-  width: 80px;
+  width: 150px;
+  padding-left: 5px;
 }
 nav button {
   display: inline-block;
   background: none;
-  border: none;
   margin: 10px 30px;
   padding: 0;
-  cursor: pointer;
   float: right;
   font-size: 44px;
 }
 nav ul {
   background: #489682;
   margin: 0;
+  padding: 15px;
+}
+nav ul li {
+  margin: 15px;
+}
+nav ul li a {
+  font-size: 28px;
+}
+nav ul li a.active {
+  font-weight: 700;
 }
 @media only screen and (min-width: 720px) {
   nav {
     display: flex;
+    align-items: center;
   }
   nav button {
     display: none;
+  }
+  nav ul {
+    background: none;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
   }
 }
 
