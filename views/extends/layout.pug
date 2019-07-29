@@ -1,13 +1,14 @@
-mixin layout(title)
-  html
-    head
-      title= title
-      link(rel="stylesheet" href="styles/index.css")
-    body
-      include ../includes/nav.pug
-      +nav(title)
-      main
-        block
-      include ../includes/footer.pug
+html
+  head
+    title= title
+    block styles
+      link(rel="stylesheet" href="/styles/index.css")
+  body
+    include ../includes/nav.pug
+    block nav
+    main
+      block main
+    include ../includes/footer.pug
+    block scripts
       script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
       script(src="/scripts/collapse.js")

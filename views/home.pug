@@ -1,2 +1,8 @@
-include extends/layout
-+layout("Home")
+extends extends/layout
+block append styles
+  link(rel="stylesheet" href="/styles/home-title.css")
+block nav
+  include includes/nav
+  +nav("Home")
+block main
+  include includes/home-title

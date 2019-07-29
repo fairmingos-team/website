@@ -35,17 +35,16 @@ footer #footer-donate button {
     grid-template-columns: auto 25% auto;
     grid-gap: 30px;
     padding: 5px 20px;
+    padding-bottom: 20px;
   }
   footer hr {
     margin: 10px;
     display: none;
   }
-  footer #footer-donate {
-    padding: 30px;
-  }
   footer #footer-donate button {
     height: auto;
     width: auto;
+    padding: 10px 20px;
   }
 }
 
