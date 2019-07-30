@@ -1,0 +1,28 @@
+div.bluealliance {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+div.bluealliance img {
+  width: 400px;
+}
+div.bluealliance div.title-text {
+  text-align: center;
+  border-radius: 20px;
+  background: #ddd;
+  width: 70%;
+  padding: 50px;
+}
+@media (min-width: 1080px) {
+  div.bluealliance {
+    flex-direction: row;
+  }
+  div.bluealliance div.title-text {
+    text-align: left;
+    padding: 100px;
+  }
+}
+
+/*# sourceMappingURL=bluealliance.css.map */

@@ -1,8 +1,10 @@
 extends extends/layout
 block append styles
-  link(rel="stylesheet" href="styles/home-title.css")
+  link(rel="stylesheet" href="styles/home.css")
 block nav
-  include includes/nav
+  include layout/nav
   +nav("Home")
 block main
-  include includes/home-title
+  include home/home-title
+  hr
+  include home/bluealliance
