@@ -12,17 +12,19 @@ footer ul {
 footer ul li {
   margin: 10px 0;
 }
+footer ul li h5 {
+  padding-left: 10px;
+}
 footer ul li a {
-  font-size: 18px;
   color: #ddd;
 }
-footer #footer-donate {
+footer .footer-donate {
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-footer #footer-donate button {
+footer .footer-donate button {
   border: none;
   background: #043;
   font-size: 24px;
@@ -33,19 +35,23 @@ footer #footer-donate button {
 }
 @media (min-width: 720px) {
   footer {
-    display: grid;
-    grid-template-columns: auto 25% auto;
-    grid-gap: 30px;
-    padding: 5px 20px;
-    padding-bottom: 20px;
+    display: flex;
+    padding: 0;
   }
   footer hr {
     display: none;
   }
-  footer #footer-donate button {
+  footer div {
+    border-radius: 5px;
+    background: #2f8970;
+    flex: auto;
+    margin: 10px 3px;
+    padding: 10px 20px;
+  }
+  footer .footer-donate button {
     height: auto;
     width: auto;
-    padding: 10px 20px;
+    padding: 15px 30px;
   }
 }
 

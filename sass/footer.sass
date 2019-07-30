@@ -10,10 +10,11 @@ footer
     padding: 0 10px
     li
       margin: 10px 0
+      h5
+        padding-left: 10px
       a
-        font-size: 18px
         color: #ddd
-  #footer-donate
+  .footer-donate
     padding: 20px
     display: flex
     align-items: center
@@ -27,15 +28,18 @@ footer
       border-radius: 10px
       color: white
   @include lg
-    display: grid
-    grid-template-columns: auto 25% auto
-    grid-gap: 30px
-    padding: 5px 20px
-    padding-bottom: 20px
+    display: flex
+    padding: 0
     hr
       display: none
-    #footer-donate
+    div
+      border-radius: 5px
+      background: #2f8970
+      flex: auto
+      margin: 10px 3px
+      padding: 10px 20px
+    .footer-donate
       button
         height: auto
         width: auto
-        padding: 10px 20px
+        padding: 15px 30px
