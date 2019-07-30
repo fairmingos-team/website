@@ -88,7 +88,7 @@ footer .footer-donate button {
   border-radius: 10px;
   color: white;
 }
-@media (min-width: 720px) {
+@media (min-width: 1080px) {
   footer {
     display: flex;
     padding: 0;
