@@ -79,12 +79,15 @@ footer .footer-donate {
   align-items: center;
   justify-content: center;
 }
-footer .footer-donate button {
-  border: none;
+footer .footer-donate a {
+  text-rendering: auto;
+  text-align: center;
+  line-height: 60px;
+  padding: auto;
   background: #043;
   font-size: 24px;
   height: 60px;
-  width: 90%;
+  width: 80vw;
   border-radius: 10px;
   color: white;
 }
@@ -103,7 +106,8 @@ footer .footer-donate button {
     margin: 10px 3px;
     padding: 10px 20px;
   }
-  footer .footer-donate button {
+  footer .footer-donate a {
+    line-height: 1em;
     height: auto;
     width: auto;
     padding: 15px 30px;

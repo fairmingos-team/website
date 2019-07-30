@@ -19,12 +19,15 @@ footer
     display: flex
     align-items: center
     justify-content: center
-    button
-      border: none
+    a
+      text-rendering: auto
+      text-align: center
+      line-height: 60px
+      padding: auto
       background: #043
       font-size: 24px
       height: 60px
-      width: 90%
+      width: 80vw
       border-radius: 10px
       color: white
   @include xl
@@ -39,7 +42,8 @@ footer
       margin: 10px 3px
       padding: 10px 20px
     .footer-donate
-      button
+      a
+        line-height: 1em
         height: auto
         width: auto
         padding: 15px 30px
