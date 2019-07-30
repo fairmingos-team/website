@@ -8,6 +8,10 @@ app.set('view engine', 'pug')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
+  res.redirect('home')
+})
+
+app.get('/home', (req, res) => {
   res.render('home')
 })
 

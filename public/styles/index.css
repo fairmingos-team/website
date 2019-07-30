@@ -1,5 +1,6 @@
 nav {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   background: #1c6f59;
 }
 nav img {
@@ -10,7 +11,8 @@ nav img {
 nav button {
   display: inline-block;
   background: none;
-  margin: 10px 30px;
+  margin-left: auto;
+  margin-right: 30px;
   padding: 0;
   float: right;
   font-size: 44px;
@@ -19,6 +21,7 @@ nav ul {
   background: #489682;
   margin: 0;
   padding: 15px;
+  width: 100%;
 }
 nav ul li {
   margin: 15px;
@@ -29,9 +32,10 @@ nav ul li a {
 nav ul li a.active {
   font-weight: 700;
 }
-@media only screen and (min-width: 720px) {
+@media (min-width: 720px) {
   nav {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
   }
   nav button {
@@ -51,7 +55,8 @@ footer {
   padding: 15px;
 }
 footer hr {
-  border: 1px solid #486;
+  border: 1px solid #376;
+  margin: 30px 0;
 }
 footer ul {
   padding: 0 10px;
@@ -77,7 +82,7 @@ footer #footer-donate button {
   border-radius: 10px;
   color: white;
 }
-@media only screen and (min-width: 720px) {
+@media (min-width: 720px) {
   footer {
     display: grid;
     grid-template-columns: auto 25% auto;
@@ -86,7 +91,6 @@ footer #footer-donate button {
     padding-bottom: 20px;
   }
   footer hr {
-    margin: 10px;
     display: none;
   }
   footer #footer-donate button {
@@ -122,6 +126,34 @@ a {
 button {
   border: none;
   cursor: pointer;
+}
+
+h1 {
+  font-size: 32px;
+}
+@media (min-width: 720px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 720px) and (min-width: 1080px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+@media (min-width: 720px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 720px) and (min-width: 1080px) {
+  h2 {
+    font-size: 32px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

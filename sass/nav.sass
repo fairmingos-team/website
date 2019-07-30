@@ -1,7 +1,8 @@
 @import breakpoints
 
 nav
-  display: block
+  display: flex
+  flex-wrap: wrap
   background: #1c6f59
   img
     display: inline-block
@@ -10,7 +11,8 @@ nav
   button
     display: inline-block
     background: none
-    margin: 10px 30px
+    margin-left: auto
+    margin-right: 30px
     padding: 0
     float: right
     font-size: 44px
@@ -18,6 +20,7 @@ nav
     background: #489682
     margin: 0
     padding: 15px
+    width: 100%
     li 
       margin: 15px
       a
@@ -27,6 +30,7 @@ nav
   // if non-mobile device
   @include lg
     display: flex
+    flex-wrap: nowrap
     align-items: center
     button
       display: none

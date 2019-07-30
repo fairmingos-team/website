@@ -1,19 +1,40 @@
 let hidden = false
 
+function hideSlow(){
+  $("#nav-collapsable").slideUp("slow")
+  hidden = true
+}
+function hide(){
+  $("#nav-collapsable").hide()
+  hidden = true
+}
+
+function showSlow(){
+  $("#nav-collapsable").slideDown("slow")
+  hidden = false
+}
+function show(){
+  $("#nav-collapsable").show()
+  hidden = false
+}
+
 $("#nav-collapse-btn").click(() => {
   if (!hidden) {
-    $("#nav-collapsable").hide("slow")
+    hideSlow()
   }
   else {
-    $("#nav-collapsable").show("slow")
+    showSlow()
   }
-
-  hidden = !hidden
 })
 
 window.onresize = () => {
-  if(window.innerWidth >= 720 && hidden) {
-    $("#nav-collapsable").show()
-    hidden = false
+  if(window.innerWidth >= breakpoints.lg) {
+    show()
+  }
+  else {
+    hide()
   }
 }
+
+
+if(window.innerWidth < breakpoints.lg) hide()

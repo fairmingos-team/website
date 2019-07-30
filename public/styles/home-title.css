@@ -9,23 +9,21 @@ div.home-title img {
   width: 400px;
 }
 div.home-title div.title-text {
+  text-align: center;
   border-radius: 20px;
   background: white;
   width: 70%;
   padding: 50px;
 }
-div.home-title div.title-text h1 {
-  font-size: 48px;
-}
 div.home-title div.title-text h2 {
-  font-size: 32px;
   color: #222;
 }
-@media only screen and (min-width: 1080px) {
+@media (min-width: 1080px) {
   div.home-title {
     flex-direction: row;
   }
   div.home-title div.title-text {
+    text-align: left;
     padding: 100px;
   }
 }

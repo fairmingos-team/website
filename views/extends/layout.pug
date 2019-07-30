@@ -1,9 +1,10 @@
 html
   head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title= title
-    link(rel="icon" href="/images/favicon.png")
+    link(rel="icon" href="images/favicon.png")
     block styles
-      link(rel="stylesheet" href="/styles/index.css")
+      link(rel="stylesheet" href="styles/index.css")
   body
     include ../includes/nav.pug
     block nav
@@ -12,4 +13,5 @@ html
     include ../includes/footer.pug
     block scripts
       script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
-      script(src="/scripts/collapse.js")
+      script(src="scripts/breakpoints.js")
+      script(src="scripts/collapse.js")

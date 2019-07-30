@@ -1,21 +1,21 @@
 mixin nav(title)
   nav
-    a(href="/") 
-      img(src="/images/fairmingosheader1.png")
+    a(href="home") 
+      img(src="images/fairmingosheader1.png")
     button#nav-collapse-btn &#8801;
     ul#nav-collapsable
       li
         if(title == "Home")
-          a(href="/").active Home
+          a(href="home").active Home
         else
-          a(href="/") Home
+          a(href="home") Home
       li
         if(title == "About")
-          a(href="/").active About
+          a(href="about").active About
         else
-          a(href="/") About
+          a(href="about") About
       li
         if(title == "Contact")
-          a(href="/").active Contact
+          a(href="contact").active Contact
         else
-          a(href="/") Contact
+          a(href="contact") Contact

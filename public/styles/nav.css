@@ -1,5 +1,6 @@
 nav {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   background: #1c6f59;
 }
 nav img {
@@ -10,7 +11,8 @@ nav img {
 nav button {
   display: inline-block;
   background: none;
-  margin: 10px 30px;
+  margin-left: auto;
+  margin-right: 30px;
   padding: 0;
   float: right;
   font-size: 44px;
@@ -19,6 +21,7 @@ nav ul {
   background: #489682;
   margin: 0;
   padding: 15px;
+  width: 100%;
 }
 nav ul li {
   margin: 15px;
@@ -29,9 +32,10 @@ nav ul li a {
 nav ul li a.active {
   font-weight: 700;
 }
-@media only screen and (min-width: 720px) {
+@media (min-width: 720px) {
   nav {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
   }
   nav button {
