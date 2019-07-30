@@ -16,6 +16,10 @@ nav button {
   padding: 0;
   float: right;
   font-size: 44px;
+  outline: none;
+}
+nav button:active {
+  background: none;
 }
 nav ul {
   background: #489682;
