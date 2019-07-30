@@ -17,9 +17,8 @@ nav button {
   float: right;
   font-size: 44px;
   outline: none;
-}
-nav button:active {
-  background: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 nav ul {
   background: #489682;
