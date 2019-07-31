@@ -1,52 +1,17 @@
-div.home-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  background: #ddd;
-}
-div.home-title img {
-  width: 250px;
-  margin: 20px;
-}
-div.home-title div.title-text {
-  text-align: center;
-  border-radius: 20px;
-  background: #ddd;
-  width: 80%;
-  padding: 0 50px;
-  margin-top: 20px;
-}
-div.home-title div.title-text h2 {
-  color: #222;
-}
-@media (min-width: 1080px) {
-  div.home-title {
-    flex-direction: row;
-  }
-  div.home-title div.title-text {
-    text-align: left;
-  }
-}
-div.home-title img {
-  width: 400px;
-  margin: 0;
-}
-div.home-title div.title-text {
-  background: white;
-  padding: 50px;
-  width: 70%;
-}
-@media (min-width: 1080px) {
-  div.home-title div.title-text {
-    padding: 100px;
-  }
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import home/home-title
+ *   |         ^^^^^^^^^^^^^^^
+ *   '
+ *   sass/home.sass 1:9  root stylesheet */
 
-hr {
-  margin: 20px 0;
-  border: 2px solid #ccc;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import home/home-title\a   \2502          ^^^^^^^^^^^^^^^\a   \2575 \a   sass/home.sass 1:9  root stylesheet";
 }
-
-/*# sourceMappingURL=home.css.map */

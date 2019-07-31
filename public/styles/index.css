@@ -219,4 +219,50 @@ h5 {
   }
 }
 
+.title-billboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ddd;
+}
+.title-billboard img {
+  width: 250px;
+  margin: 20px;
+}
+.title-billboard div.title-text {
+  text-align: center;
+  border-radius: 20px;
+  background: #ddd;
+  width: 80%;
+  padding: 0 50px;
+  margin-top: 20px;
+}
+.title-billboard div.title-text h2 {
+  color: #222;
+}
+@media (min-width: 1080px) {
+  .title-billboard {
+    flex-direction: row;
+  }
+  .title-billboard div.title-text {
+    text-align: left;
+  }
+}
+.title-billboard img {
+  width: 400px;
+  margin: 0;
+}
+.title-billboard div.title-text {
+  background: white;
+  padding: 50px;
+  width: 70%;
+}
+@media (min-width: 1080px) {
+  .title-billboard div.title-text {
+    padding: 100px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
