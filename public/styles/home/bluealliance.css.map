@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../../sass/home/bluealliance.sass","../../../sass/breakpoints.sass"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;;AACA;EACE;EACA;;AACF;EACE;EACA;EACA;EACA;EACA;;ACXF;EDFF;IAeI;;EACA;IACE","file":"bluealliance.css"}
+{"version":3,"sourceRoot":"","sources":["../../../sass/home/bluealliance.sass","../../../sass/mixins/billboard.sass","../../../sass/breakpoints.sass"],"names":[],"mappings":"AAEA;ECCE;EACA;EACA;EACA;;AACA;EACE;EACA;;AACF;EACE;EACA;EACA;EACA;EACA;;AACA;EACE;;ACbJ;EFFF;ICiBI;;EACA;IACE","file":"bluealliance.css"}

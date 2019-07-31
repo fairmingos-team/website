@@ -12,8 +12,9 @@ footer ul {
 footer ul li {
   margin: 10px 0;
 }
-footer ul li h5 {
+footer ul li h4.contact-text {
   padding-left: 10px;
+  color: #ddd;
 }
 footer ul li a {
   color: #ddd;

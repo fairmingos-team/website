@@ -1,4 +1,5 @@
 @import nav, footer, main, breakpoints
+@import mixins/billboard
 
 body
   margin: 0
@@ -9,6 +10,7 @@ ul
   list-style-type: none
 a
   text-decoration: none
+  color: #24f
   &:hover
     text-decoration: underline
 button
@@ -38,3 +40,6 @@ h4
 h5
   color: #111
   font-size: 16px
+
+.billboard
+  @include billboard

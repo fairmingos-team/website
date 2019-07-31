@@ -1,24 +1,17 @@
 @import ../breakpoints
+@import ../mixins/billboard
 
 div.home-title
-  display: flex
+  @include billboard
   border-radius: 10px
   background: #ddd
-  flex-direction: column
-  align-items: center
-  padding: 20px
   img
     width: 400px
+    margin: 0
   div.title-text
-    text-align: center
-    border-radius: 20px
     background: white
-    width: 70%
     padding: 50px
-    h2
-      color: #222
+    width: 70%
   @include xl
-    flex-direction: row
     div.title-text
-      text-align: left
       padding: 100px

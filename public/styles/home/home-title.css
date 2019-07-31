@@ -1,20 +1,22 @@
 div.home-title {
   display: flex;
-  border-radius: 10px;
-  background: #ddd;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  border-radius: 10px;
+  background: #ddd;
 }
 div.home-title img {
-  width: 400px;
+  width: 250px;
+  margin: 20px;
 }
 div.home-title div.title-text {
   text-align: center;
   border-radius: 20px;
-  background: white;
-  width: 70%;
-  padding: 50px;
+  background: #ddd;
+  width: 80%;
+  padding: 0 50px;
+  margin-top: 20px;
 }
 div.home-title div.title-text h2 {
   color: #222;
@@ -25,6 +27,19 @@ div.home-title div.title-text h2 {
   }
   div.home-title div.title-text {
     text-align: left;
+  }
+}
+div.home-title img {
+  width: 400px;
+  margin: 0;
+}
+div.home-title div.title-text {
+  background: white;
+  padding: 50px;
+  width: 70%;
+}
+@media (min-width: 1080px) {
+  div.home-title div.title-text {
     padding: 100px;
   }
 }
