@@ -1,0 +1,31 @@
+div.title-billboard img {
+  width: 250px;
+}
+@media (min-width: 1080px) {
+  div.title-billboard img {
+    width: 400px;
+  }
+}
+div.title-billboard img.icon {
+  width: 30px;
+  margin-left: 20px;
+  background: #ddd;
+  padding: 0 5px;
+}
+
+div.container {
+  background: #eee;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+div.container h3 {
+  margin: 4em 0;
+}
+div.container h4, div.container h5 {
+  margin-left: 10px;
+}
+div.container h4 {
+  color: #033;
+}
+
+/*# sourceMappingURL=contact.css.map */

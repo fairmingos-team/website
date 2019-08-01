@@ -6,6 +6,12 @@ body
   padding: 0
   background: #f5a0a0
   font-family: Helvetica
+
+p
+  font-size: 20px
+  line-height: 2em
+  padding: 5px 10px
+
 ul
   list-style-type: none
 a
@@ -45,3 +51,18 @@ h5
   @include billboard
 .title-billboard
   @include title-billboard
+
+div.container
+  padding: 20px
+  @include lg
+    padding: 30px 50px
+div.inline-container
+  padding: 30px 50px
+  display: flex
+  flex-direction: column
+  align-items: center
+  @include lg
+    align-items: flex-start
+  @include xl
+    justify-content: space-between
+    flex-direction: row

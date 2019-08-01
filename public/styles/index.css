@@ -131,6 +131,12 @@ body {
   font-family: Helvetica;
 }
 
+p {
+  font-size: 20px;
+  line-height: 2em;
+  padding: 5px 10px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -194,6 +200,7 @@ h5 {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-top: 20px;
 }
 .billboard img {
   width: 250px;
@@ -205,7 +212,6 @@ h5 {
   background: #ddd;
   width: 80%;
   padding: 0 50px;
-  margin-top: 20px;
 }
 .billboard div.title-text h2 {
   color: #222;
@@ -213,8 +219,10 @@ h5 {
 @media (min-width: 1080px) {
   .billboard {
     flex-direction: row;
+    margin-top: 0;
   }
   .billboard div.title-text {
+    width: 100%;
     text-align: left;
   }
 }
@@ -224,8 +232,10 @@ h5 {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-top: 20px;
   border-radius: 10px;
   background: #ddd;
+  margin-top: 0;
 }
 .title-billboard img {
   width: 250px;
@@ -237,7 +247,6 @@ h5 {
   background: #ddd;
   width: 80%;
   padding: 0 50px;
-  margin-top: 20px;
 }
 .title-billboard div.title-text h2 {
   color: #222;
@@ -245,8 +254,10 @@ h5 {
 @media (min-width: 1080px) {
   .title-billboard {
     flex-direction: row;
+    margin-top: 0;
   }
   .title-billboard div.title-text {
+    width: 100%;
     text-align: left;
   }
 }
@@ -261,7 +272,35 @@ h5 {
 }
 @media (min-width: 1080px) {
   .title-billboard div.title-text {
+    width: 100%;
     padding: 100px;
+  }
+}
+
+div.container {
+  padding: 20px;
+}
+@media (min-width: 720px) {
+  div.container {
+    padding: 30px 50px;
+  }
+}
+
+div.inline-container {
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 720px) {
+  div.inline-container {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1080px) {
+  div.inline-container {
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
