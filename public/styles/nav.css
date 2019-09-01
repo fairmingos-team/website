@@ -2,10 +2,11 @@ nav {
   display: flex;
   flex-wrap: wrap;
   background: #1c6f59;
+  align-items: center;
 }
 nav img {
   display: inline-block;
-  width: 150px;
+  width: 250px;
   padding-left: 5px;
 }
 nav button {
@@ -42,10 +43,14 @@ nav ul li a.active {
     flex-wrap: nowrap;
     align-items: center;
   }
+  nav img {
+    width: 300px;
+  }
   nav button {
     display: none;
   }
   nav ul {
+    margin-left: 20px;
     background: none;
   }
   nav ul li {

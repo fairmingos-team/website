@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon .",
     "sass:watch": "sass --watch sass:public/styles",
-    "sass:build": "sass sass:public/styles"
+    "sass:build": "sass sass:public/styles",
+    "start": "concurrently 'yarn serve' 'yarn sass:watch'"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/fairbotics5340/website#readme",
   "devDependencies": {
+    "concurrently": "^4.1.2",
     "express": "^4.17.1",
     "nodemon": "^1.19.1",
     "sass": "^1.22.7"
