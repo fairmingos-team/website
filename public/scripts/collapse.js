@@ -27,14 +27,5 @@ $("#nav-collapse-btn").click(() => {
   }
 })
 
-window.onresize = () => {
-  if(window.innerWidth >= breakpoints.lg) {
-    show()
-  }
-  else {
-    hide()
-  }
-}
-
-
 if(window.innerWidth < breakpoints.lg) hide()
+else show()

@@ -1,0 +1,10 @@
+mixin panel(title, img_src)
+  div.panel
+    img.panel-img(src= img_src)
+    div.panel-body
+      h1= title
+      hr
+      if block
+        block
+      else
+        p No content provided

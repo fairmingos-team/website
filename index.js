@@ -8,17 +8,13 @@ app.set('view engine', 'pug')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.redirect('home')
-})
-
-app.get('/home', (req, res) => {
-  res.render('home')
+  res.render('home', {title: "Home"})
 })
 app.get('/about', (req, res) => {
-  res.render('about')
+  res.render('about', {title: "About"})
 })
 app.get('/contact', (req, res) => {
-  res.render('contact')
+  res.render('contact', {title: "Contact"})
 })
 
 app.listen(port, () => {
