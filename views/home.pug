@@ -1,6 +1,4 @@
 extends extends/layout
-block append styles
-  link(rel="stylesheet" href="styles/home.css")
 block nav
   include layout/nav
   +nav("Home") block main include home/home-title
@@ -35,3 +33,11 @@ block main
     p
       | FIRST provides an introduction to STEM and engineering through 
       | creating a challenge for a robot every year
+
+  hr
+  +panel("Who are we?", 'images/panel4.jpg')
+    p
+      | A small team from FAIR School Downtown
+    p
+      | Participated in the North Star FRC Regional Competition at the 
+      | University of Minnesota in 2019

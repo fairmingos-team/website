@@ -162,6 +162,9 @@ div.panel div.panel-body hr {
     padding: 5px 50px;
     width: 100%;
   }
+  div.panel div.panel-body hr {
+    border: 2px dashed #ddd;
+  }
 }
 
 body {

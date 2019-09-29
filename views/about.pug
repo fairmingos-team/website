@@ -3,4 +3,11 @@ block nav
   include layout/nav
   +nav("About")
 block main
-  include includes/unavailable
+  include about/about-title
+  hr
+
+  include mixins/panel
+
+  +panel("Where Did We Start?", 'images/fair_school.jpg')
+    p
+      | We are a high school league robotics team at the FAIR School Downtown
