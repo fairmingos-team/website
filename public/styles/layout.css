@@ -1,0 +1,12 @@
+hr {
+  margin: 20px 0;
+  border: 2px solid #ccc;
+}
+@media (min-width: 720px) {
+  hr {
+    margin: 50px 0;
+    border: 2px dashed #eee;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */
