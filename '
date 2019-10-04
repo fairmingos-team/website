@@ -1,5 +1,5 @@
-div#top-border
 footer
+  hr#top-border
   div
     h2 FAIRMINGOS 5340
     h4 The FAIR School Downtown FRC robotics team

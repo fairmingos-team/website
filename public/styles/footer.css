@@ -1,10 +1,35 @@
+div#top-border {
+  background-color: white;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div#top-border hr {
+  margin: 0;
+  border: 1px dashed black;
+}
+
 footer {
   background: #2c7f69;
   padding: 20px 25px;
 }
+footer h2 {
+  color: white;
+}
+footer h3 {
+  color: white;
+}
+footer h4 {
+  color: white;
+}
 footer hr {
   border: 1px solid #376;
   margin: 30px 0;
+}
+footer hr#top-border {
+  border: 3px solid black;
 }
 footer ul {
   padding: 0 10px;
@@ -44,6 +69,9 @@ footer .footer-donate a {
   }
   footer hr {
     display: none;
+  }
+  footer hr#top-border {
+    display: block;
   }
   footer div {
     border-radius: 5px;

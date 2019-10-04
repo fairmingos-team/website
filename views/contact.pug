@@ -6,10 +6,7 @@ block nav
   +nav("Contact")
 block main
   include contact/contact-title
-  div.container
-    h3 Looking to sponsor and want more info?
-    h5 Email:
-    h4 contact@fairmingos.com
-    h5 Phone:
-    h4 (573) 575-6467
-    h3 Contact us and we'll give you the full rundown.
+
+  include mixins/panel
+
+  include contact/contact-panel

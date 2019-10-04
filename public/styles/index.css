@@ -59,13 +59,38 @@ nav ul li a.active {
   }
 }
 
+div#top-border {
+  background-color: white;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div#top-border hr {
+  margin: 0;
+  border: 1px dashed black;
+}
+
 footer {
   background: #2c7f69;
   padding: 20px 25px;
 }
+footer h2 {
+  color: white;
+}
+footer h3 {
+  color: white;
+}
+footer h4 {
+  color: white;
+}
 footer hr {
   border: 1px solid #376;
   margin: 30px 0;
+}
+footer hr#top-border {
+  border: 3px solid black;
 }
 footer ul {
   padding: 0 10px;
@@ -105,6 +130,9 @@ footer .footer-donate a {
   }
   footer hr {
     display: none;
+  }
+  footer hr#top-border {
+    display: block;
   }
   footer div {
     border-radius: 5px;
@@ -150,6 +178,16 @@ div.panel div.panel-body {
 div.panel div.panel-body hr {
   margin: 0;
 }
+div.panel ul {
+  margin: 0;
+  margin-bottom: 20px;
+  list-style-type: circle;
+  font-size: 18px;
+}
+div.panel ul li {
+  font-weight: bold;
+  padding: 10px 0;
+}
 @media (min-width: 720px) {
   div.panel {
     flex-direction: row;
@@ -163,8 +201,12 @@ div.panel div.panel-body hr {
     width: 100%;
   }
   div.panel div.panel-body hr {
-    border: 2px dashed #ddd;
+    border: 2px solid #ddd;
   }
+}
+
+div#contact-panel div.panel div.panel-body h4 {
+  padding-left: 20px;
 }
 
 body {
@@ -305,7 +347,7 @@ h5 {
   }
 }
 .title-billboard img {
-  width: 400px;
+  width: 300px;
   margin: 0;
 }
 .title-billboard div.title-text {
@@ -314,6 +356,9 @@ h5 {
   width: 70%;
 }
 @media (min-width: 1080px) {
+  .title-billboard img {
+    width: 400px;
+  }
   .title-billboard div.title-text {
     width: 100%;
     padding: 100px;
